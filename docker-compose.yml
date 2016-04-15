@@ -1,0 +1,11 @@
+version: "2"
+services:
+
+  rubyimage:
+    container_name: rubycli
+    build: build
+    ulimits:
+      nofile:
+        soft: 20000
+        hard: 40000
+      nproc: 65535
